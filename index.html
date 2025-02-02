@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Brawl Stars Event</h1>
+        <div id="user-info">Вхід / Реєстрація</div>
+        <div id="user-balance">Баланс: 0</div>
+    </header>
+    
+    <main>
+        <section id="stream">
+            <iframe src="https://player.twitch.tv/?channel=ktwerty_13&parent=yourwebsite.com" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+        <section id="questions">
+            <h2>Питання</h2>
+            <div id="question-container"></div>
+        </section>
+        
+        <button id="cup-button">🥤</button>
+        
+        <section id="admin-panel" style="display: none;">
+            <h2>Адмін-панель</h2>
+            <label for="admin-password">Введіть пароль:</label>
+            <input type="password" id="admin-password">
+            <button id="admin-login">Увійти</button>
+            <div id="admin-content" style="display: none;">
+                <h3>Створити питання</h3>
+                <input type="text" id="new-question" placeholder="Текст питання">
+                <input type="text" id="answer-1" placeholder="Варіант 1">
+                <input type="text" id="answer-2" placeholder="Варіант 2">
+                <input type="text" id="answer-3" placeholder="Варіант 3">
+                <input type="text" id="correct-answer" placeholder="Правильна відповідь">
+                <button id="add-question">Додати питання</button>
+                <h3>Список користувачів</h3>
+                <ul id="user-list"></ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Brawl Stars Event</p>
+    </footer>
+</body>
+</html>
